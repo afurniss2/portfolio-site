@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+body button {
+  color: black;
+}
+
+header {
+  background: #0077cc;
+  color: black;
+  padding: 2rem;
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  background: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+footer {
+  background:#0077cc;
+  text-align: center;
+  padding: 1rem;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+body.dark button {
+  background-color: #0011ff;
+  color: #f5f5f5;
+}
+
+body.dark header,
+body.dark footer {
+  background-color: #0011ff;
+  color: #f5f5f5;
+}
+
+body.dark a {
+  color: #f5f5f5;
+  background-color: #0011ff;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.resume-link {
+  display: inline-block;
+  background-color: #0077cc;
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.github-link {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.github-link {
+  color:black
+}
+
+.github-link:hover {
+  background-color: #005fa3;
+}

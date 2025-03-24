@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="image1.jpeg" class="profile-pic">
+    <h1>Adam Furniss</h1>
+    <p>Software Engineering Major</p>
+    <p>University of Nebraska-Lincoln 2026</p>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+  </header>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Adam, a junior at the University of Nebraska-Lincoln who is passionate about web design and full stack development.</p>
+    <a href="Resume Adam Furniss-1.pdf" class="resume-link" download>Download Resume</a>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A personal site to showcase my work and skills.</p>
+      <a href="https://github.com/afurniss2/portfolio-site" class="github-link" target="_blank">View Code</a>
+    </div>
+    <div class="project">
+      <h3>ER diagram generator</h3>
+      <p>A website that generates an ER diagram based on a given specification</p>
+      <a href="https://github.com/afurniss2/ER-diagram-generator" class="github-link" target="_blank">View Code</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <p id="formFeedback"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Adam Furniss</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
