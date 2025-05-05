@@ -11,8 +11,13 @@
     <h1>Adam Furniss</h1>
     <p>Software Engineering Major</p>
     <p>University of Nebraska-Lincoln 2026</p>
-    <button id="darkModeToggle">Toggle Dark Mode</button>
-  </header>
+    <label for="themeSelector">Theme:</label>
+    <select id="themeSelector">
+      <option value="default">Light</option>
+      <option value="dark">Dark</option>
+      <option value="peach">Peach</option>
+      <option value="forest">Forest</option>
+    </select>  </header>
   <section id="about">
     <h2>About Me</h2>
     <p>Hello! I'm Adam, a junior at the University of Nebraska-Lincoln who is passionate about web design and full stack development.</p>
@@ -25,26 +30,42 @@
       <h3>Portfolio Website</h3>
       <p>A personal site to showcase my work and skills.</p>
       <a href="https://github.com/afurniss2/portfolio-site" class="github-link" target="_blank">View Code</a>
+      <div class="carousel">
+        <img src="img/project1-1.png" class="carousel-img" id="carouselImg-1">
+        <div class="carousel-controls">
+          <button onclick="prevImg(1)">⟨</button>
+          <button onclick="nextImg(1)">⟩</button>
+        </div>
+      </div>
     </div>
     <div class="project">
       <h3>ER diagram generator</h3>
       <p>A website that generates an ER diagram based on a given specification</p>
       <a href="https://github.com/afurniss2/ER-diagram-generator" class="github-link" target="_blank">View Code</a>
+      <div class="carousel">
+        <img src="img/project2-1.png" class="carousel-img" id="carouselImg-2">
+        <div class="carousel-controls">
+          <button onclick="prevImg(2)">⟨</button>
+          <button onclick="nextImg(2)">⟩</button>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact Me</h2>
     <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Your Message" required></textarea>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="content" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
       <p id="formFeedback"></p>
     </form>
+    <button onclick="window.location.href='login.php'" class="admin-button">Admin Login</button>
   </section>
 
   <footer>
+    <button id="scrollTopBtn" title="Back to top">⬆️</button>
     <p>&copy; 2025 Adam Furniss</p>
   </footer>
 
